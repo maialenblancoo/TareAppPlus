@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Contacto | TareApp+</title>
+  <meta name="description" content="Página de contacto de TareApp+: envía tus dudas, comentarios o incidencias al equipo de soporte.">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1><img src="images/tareapp_icon.png" alt="Icono TareApp+" class="logo-icon"> TareApp+</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="form.html">Nuevo Proyecto</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contacto.html" class="activo">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="contacto">
+      <h2>Contáctanos</h2>
+      <p>¿Tienes alguna duda o problema? Completa el formulario y nuestro equipo te responderá lo antes posible.</p>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Datos personales</legend>
+
+          <p>
+            <label for="nombre">Nombre completo:</label><br>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required autofocus>
+          </p>
+
+          <p>
+            <label for="email">Correo electrónico:</label><br>
+            <input type="email" id="email" name="email" placeholder="tuemail@ejemplo.com" required>
+          </p>
+
+          <p>
+            <label for="telefono">Teléfono (opcional):</label><br>
+            <input type="text" id="telefono" name="telefono" placeholder="+34 600 123 456">
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Mensaje</legend>
+
+          <p>
+            <label for="asunto">Asunto:</label><br>
+            <select id="asunto" name="asunto" required>
+              <option value="">Selecciona un tema...</option>
+              <option value="soporte">Soporte técnico</option>
+              <option value="facturacion">Facturación</option>
+              <option value="sugerencia">Sugerencia</option>
+              <option value="otro">Otro</option>
+            </select>
+          </p>
+
+          <p>
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe tu mensaje aquí..." required></textarea>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Consentimiento</legend>
+
+          <p>
+            <input type="checkbox" id="terminos" name="terminos" required>
+            <label for="terminos">He leído y acepto la <a href="#">política de privacidad</a>.</label>
+          </p>
+
+          <p>
+            <input type="checkbox" id="newsletter" name="newsletter" value="1">
+            <label for="newsletter">Deseo recibir actualizaciones de TareApp+.</label>
+          </p>
+
+          <p>
+            <input type="submit" value="Enviar mensaje">
+            <input type="reset" value="Limpiar formulario">
+          </p>
+        </fieldset>
+      </form>
+    </section>
+
+    <aside>
+      <h4>Atención al cliente</h4>
+      <p><strong>Email:</strong> <a href="mailto:support@tareapp.com">support@tareapp.com</a><br>
+      <strong>Teléfono:</strong> +34 609 30 86 15<br>
+      <strong>Horario:</strong> Lunes a viernes, de 9:00 a 18:00.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p><strong>Información de contacto:</strong></p>
+    <p>
+      Email: <a href="mailto:support@tareapp.com">support@tareapp.com</a><br>
+      Tel: +34 609 30 86 15<br>
+      &copy; 2025 TareApp+
+    </p>
+  </footer>
+</body>
+</html>

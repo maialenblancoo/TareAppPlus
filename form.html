@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Nuevo Proyecto | TareApp+</title>
+  <meta name="description" content="Formulario para crear un nuevo proyecto en TareApp+: introduce los datos del cliente, fechas, tipo de proyecto y más.">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1><img src="images/tareapp_icon.png" alt="Icono TareApp+" class="logo-icon"> TareApp+</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="form.html" class="activo">Nuevo Proyecto</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="nuevo-proyecto">
+      <h2>Formulario de alta de nuevo proyecto</h2>
+      <p>Rellena los campos a continuación para registrar un nuevo proyecto en TareApp+.</p>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Datos generales del proyecto</legend>
+
+          <p>
+            <label for="titulo">Título del proyecto:</label><br>
+            <input type="text" id="titulo" name="titulo" placeholder="Ej: Web corporativa" required autofocus>
+          </p>
+
+          <p>
+            <label for="responsable">Responsable:</label><br>
+            <input type="text" id="responsable" name="responsable" placeholder="Ej: Ana López" required>
+          </p>
+
+          <p>
+            <label for="cliente">Cliente:</label><br>
+            <input type="text" id="cliente" name="cliente" placeholder="Ej: DigitalSoft S.A." required>
+          </p>
+
+          <p>
+            <label for="tipo">Tipo de proyecto:</label><br>
+            <select id="tipo" name="tipo" required>
+              <optgroup label="Desarrollo">
+                <option value="web" selected>Web</option>
+                <option value="movil">Aplicación móvil</option>
+                <option value="software">Software a medida</option>
+              </optgroup>
+              <optgroup label="Marketing">
+                <option value="landing">Landing promocional</option>
+                <option value="seo">SEO / Posicionamiento</option>
+                <option value="social">Gestión de RRSS</option>
+              </optgroup>
+            </select>
+          </p>
+
+          <p>
+            <label for="descripcion">Descripción:</label><br>
+            <textarea id="descripcion" name="descripcion" rows="5" cols="40" placeholder="Breve descripción del proyecto..." minlength="10" maxlength="500" required></textarea>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Fechas y planificación</legend>
+          <p>
+            <label for="inicio">Fecha de inicio:</label><br>
+            <input type="date" id="inicio" name="inicio" required>
+          </p>
+
+          <p>
+            <label for="fin">Fecha de finalización:</label><br>
+            <input type="date" id="fin" name="fin">
+          </p>
+
+          <p>
+            <label for="prioridad">Nivel de prioridad:</label><br>
+            <input type="radio" id="alta" name="prioridad" value="alta" checked>
+            <label for="alta">Alta</label>
+            <input type="radio" id="media" name="prioridad" value="media">
+            <label for="media">Media</label>
+            <input type="radio" id="baja" name="prioridad" value="baja">
+            <label for="baja">Baja</label>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Confirmación</legend>
+          <p>
+            <input type="checkbox" id="privacidad" name="privacidad" required>
+            <label for="privacidad">Acepto la política de privacidad.</label>
+          </p>
+
+          <p>
+            <input type="checkbox" id="newsletter" name="newsletter" value="1">
+            <label for="newsletter">Deseo recibir notificaciones sobre mis proyectos.</label>
+          </p>
+
+          <p>
+            <input type="submit" value="Crear Proyecto">
+            <input type="reset" value="Limpiar formulario">
+          </p>
+        </fieldset>
+      </form>
+    </section>
+
+    <aside>
+      <h4>Consejo</h4>
+      <p>Cuanto más detallada sea la descripción del proyecto, más fácil será planificar y asignar recursos.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p><strong>Información de contacto:</strong></p>
+    <p>
+      Email: <a href="mailto:support@tareapp.com">support@tareapp.com</a><br>
+      Tel: +34 609 30 86 15<br>
+      &copy; 2025 TareApp+
+    </p>
+  </footer>
+</body>
+</html>

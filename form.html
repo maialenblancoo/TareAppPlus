@@ -48,8 +48,9 @@
           <p>
             <label for="tipo">Tipo de proyecto:</label><br>
             <select id="tipo" name="tipo" required>
+              <option value="" disabled selected hidden>Selecciona un tipo...</option>
               <optgroup label="Desarrollo">
-                <option value="web" selected>Web</option>
+                <option value="web">Web</option>
                 <option value="movil">Aplicación móvil</option>
                 <option value="software">Software a medida</option>
               </optgroup>
@@ -80,11 +81,14 @@
           </p>
 
           <p>
-            <label for="prioridad">Nivel de prioridad:</label><br>
+            <span class="label-group">Nivel de prioridad:</span><br>
+
             <input type="radio" id="alta" name="prioridad" value="alta" checked>
             <label for="alta">Alta</label>
+
             <input type="radio" id="media" name="prioridad" value="media">
             <label for="media">Media</label>
+
             <input type="radio" id="baja" name="prioridad" value="baja">
             <label for="baja">Baja</label>
           </p>
